@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML LEARNING</title>
+    <link rel="stylesheet" href="style.css" />
 
     <style>
-        .heading {
-            color: red;
-            text-transform: uppercase;
-        }
+      .heading {
+        color: red;
+        text-transform: uppercase;
+      }
     </style>
-</head>
-<body>
-    <h1 class="heading" id="goodbye">
-        Hello World
-    </h1>
-    <h1 id="hello">
-        Hi there
-    </h1>
+  </head>
+  <body>
+    <h1 class="heading" id="goodbye">Hello World</h1>
+    <h1 id="hello">Hi there</h1>
 
     <!-- <img src="https://images.unsplash.com/photo-1585928642599-31f15a88c002?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="random">
      -->
-     <img src="./images/people.jpeg" alt="hands">
-     <hr>
+    <img src="./images/people.jpeg" alt="hands" width="100" /><br />
+    <video src="" autoplay controls></video>
+    <br />
+    <br />
+    <br />
+    <audio src="" controls></audio>
 
-     <a href="https://google.com">Google</a>
-     <a href="https://twitter.com/_xxdr0">My Twitter</a>
-     <p>.</p><p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Nihil, ducimus!</p>
+    <iframe
+      width="500"
+      height="300"
+      src="https://www.youtube.com/embed/kUMe1FH4CHE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <hr />
 
+    <a href="https://google.com" target="_blank" rel="noreferrer">Google</a>
+    <!--Anchor tag-->
+    <a href="https://twitter.com/_xxdr0" target="_blank">My Twitter</a>
+    <p>.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur <br />
+      adipisicing elit. Nihil, ducimus!
+    </p>
+
+    <a href="about.html">Go to the about page</a>
 
     <script>
-        let heading = document.getElementById("hello")
+      let heading = document.getElementById("hello");
 
-        heading.addEventListener("click", () => {
-            heading.style.color = "green"
-        })
+      heading.addEventListener("click", () => {
+        heading.style.color = "green";
+      });
     </script>
-</body>
+  </body>
 </html>
